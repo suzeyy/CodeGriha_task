@@ -4,6 +4,7 @@ import 'package:codegriha_task/splash.dart';
 import 'package:codegriha_task/home.dart';
 import 'package:codegriha_task/checkboxes.dart';
 import 'package:codegriha_task/sliders.dart';
+import 'package:codegriha_task/badges.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -19,6 +20,7 @@ void main() {
       RouteConstants.homeRoute: (context) => Home(),
       RouteConstants.sliderRoute: (context) => Sliders(),
       RouteConstants.checkBoxesRoute: (context) => CheckBoxes(),
+      RouteConstants.badgesRoute: (context) => Badges(),
     },
   ));
 }

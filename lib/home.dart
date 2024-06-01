@@ -13,39 +13,67 @@ class Home extends StatelessWidget {
         centerTitle: true,
       ),
       body: SingleChildScrollView(
-        child: Column(
-          children: [
-            InkWell(
-              child: Container(
-                padding: EdgeInsets.all(16),
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(8.0),
+        child: Center(
+          child: Column(
+            children: [
+              SizedBox(height: 20),
+              InkWell(
+                child: Container(
+                  padding: EdgeInsets.all(16),
+                  height: 50,
+                  width: 200,
+                  decoration: BoxDecoration(
+                    color: Colors.lightBlue,
+                    borderRadius: BorderRadius.circular(8.0),
+                  ),
+                  child: Center(
+                    child: Text('Click here to open Sliders'),
+                  ),
                 ),
-                child: Center(
-                  child: Text('Click here to open Sliders'),
-                ),
+                onTap: () {
+                  Navigator.of(context).pushNamed(RouteConstants.sliderRoute);
+                },
               ),
-              onTap: () {
-                Navigator.of(context).pushNamed(RouteConstants.sliderRoute);
-              },
-            ),
-            SizedBox(height: 20),
-            InkWell(
-              child: Container(
-                padding: EdgeInsets.all(16),
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(8.0),
+              SizedBox(height: 20),
+              InkWell(
+                child: Container(
+                  padding: EdgeInsets.all(16),
+                  height: 50,
+                  width: 250,
+                  decoration: BoxDecoration(
+                    color: Colors.lightBlue,
+                    borderRadius: BorderRadius.circular(8.0),
+                  ),
+                  child: Center(
+                    child: Text('Click here to open Check Boxes'),
+                  ),
                 ),
-                child: Center(
-                  child: Text('Click here to open Check Boxes'),
-                ),
+                onTap: () {
+                  Navigator.of(context)
+                      .pushNamed(RouteConstants.checkBoxesRoute);
+                },
               ),
-              onTap: () {
-                Navigator.of(context).pushNamed(RouteConstants.checkBoxesRoute);
-              },
-            ),
-            SizedBox(height: 20),
-          ],
+              SizedBox(height: 20),
+              InkWell(
+                child: Container(
+                  padding: EdgeInsets.all(16),
+                  height: 50,
+                  width: 250,
+                  decoration: BoxDecoration(
+                    color: Colors.lightBlue,
+                    borderRadius: BorderRadius.circular(8.0),
+                  ),
+                  child: Center(
+                    child: Text('Click here to open Badges'),
+                  ),
+                ),
+                onTap: () {
+                  Navigator.of(context).pushNamed(RouteConstants.badgesRoute);
+                },
+              ),
+              SizedBox(height: 20),
+            ],
+          ),
         ),
       ),
     );
