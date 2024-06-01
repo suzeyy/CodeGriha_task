@@ -4,4 +4,6 @@ class RouteConstants {
   static const String sliderRoute = "/slider";
   static const String checkBoxesRoute = "/checkbox";
   static const String badgesRoute = "/badges";
+  static const String avatarRoute = "/avatars";
+  static const String progressIndicatorsRoute = "/progressindicators";
 }
