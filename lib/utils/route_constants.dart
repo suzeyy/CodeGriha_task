@@ -9,4 +9,5 @@ class RouteConstants {
   static const String carouselSlidersRoute = "/carouselsliders";
   static const String toggleButtonRoute = "/togglebutton";
   static const String colorPickersRoute = "/colorpicker";
+  static const String radioButtonRoute = "/radiobuttons";
 }
