@@ -7,4 +7,6 @@ class RouteConstants {
   static const String avatarRoute = "/avatars";
   static const String progressIndicatorsRoute = "/progressindicators";
   static const String carouselSlidersRoute = "/carouselsliders";
+  static const String toggleButtonRoute = "/togglebutton";
+  static const String colorPickersRoute = "/colorpicker";
 }
