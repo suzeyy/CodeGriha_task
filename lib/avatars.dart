@@ -26,8 +26,7 @@ class Avatars extends StatelessWidget {
               SizedBox(height: 20),
               Text('State=Image'),
               CircleAvatar(
-                backgroundImage: NetworkImage(
-                    'https://www.freepik.com/premium-ai-image/pink-flower-with-blurry-background_179628359.htm#query=beautiful%20flowers&position=13&from_view=keyword&track=ais_user&uuid=73b644e5-ba6f-4e57-9779-bbdf16b7e6c8'),
+                backgroundImage: NetworkImage('https://shorturl.at/SY8T3'),
               ),
               SizedBox(height: 20),
               Text('State=Text'),

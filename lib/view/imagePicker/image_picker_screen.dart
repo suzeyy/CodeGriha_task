@@ -25,20 +25,21 @@ class ImagePickerScreen extends StatelessWidget {
       body: Obx(() {
         return ListView(
           children: [
-            imagePickerController.memoryImage.value.isNotEmpty
-                ? kIsWeb
+            kIsWeb
+                ? imagePickerController.memoryImage.value.isNotEmpty
                     ? Image.memory(
                         imagePickerController.memoryImage.value,
                         height: 200,
                         width: 200,
                       )
-                    : Image.file(
+                    : Text('Please select an image')
+                : imagePickerController.image.value.path.isNotEmpty
+                    ? Image.file(
                         imagePickerController.image.value,
                         width: 200,
                         height: 200,
                       )
-                : Text('Pick an image to get started...',
-                    style: TextStyle(fontSize: 16)),
+                    : Text('Please select an image'),
             const SizedBox(
               height: 20,
             ),

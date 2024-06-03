@@ -25,21 +25,16 @@ class ImagePickerController extends GetxController {
         update();
       }
     } else {
-      final permResult = await Permission.storage.request();
-      if (permResult.isGranted) {
-        var localImage = await _picker.pickImage(
-            source: ImageSource.gallery, imageQuality: 50);
+      print('Hello this is second part');
+      //final permResult = await Permission.storage.request();
+      var localImage = await _picker.pickImage(
+          source: ImageSource.gallery, imageQuality: 50);
 
-        if (localImage != null) {
-          imageExtension = localImage.name.split('.').last;
-          image.value = File(localImage.path);
-          update();
-        }
-      } else {
-        if (kDebugMode) {
-          print(
-              "Storage permission not granted, please go to setting and allow it");
-        }
+      if (localImage != null) {
+        imageExtension = localImage.name.split('.').last;
+        image.value = File(localImage.path);
+        image.refresh();
+        update();
       }
     }
   }
