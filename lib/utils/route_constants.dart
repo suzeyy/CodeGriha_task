@@ -10,4 +10,6 @@ class RouteConstants {
   static const String toggleButtonRoute = "/togglebutton";
   static const String colorPickersRoute = "/colorpicker";
   static const String radioButtonRoute = "/radiobuttons";
+  static const String timeLineRoute = "/timeLines";
+  static const String imagePickerRoute = "/imagePicker";
 }

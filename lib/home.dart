@@ -185,6 +185,43 @@ class Home extends StatelessWidget {
                 },
               ),
               SizedBox(height: 20),
+              InkWell(
+                child: Container(
+                  padding: EdgeInsets.all(16),
+                  height: 50,
+                  width: 300,
+                  decoration: BoxDecoration(
+                    color: Colors.lightBlue,
+                    borderRadius: BorderRadius.circular(8.0),
+                  ),
+                  child: Center(
+                    child: Text('Click here to open Timeline'),
+                  ),
+                ),
+                onTap: () {
+                  Navigator.of(context).pushNamed(RouteConstants.timeLineRoute);
+                },
+              ),
+              SizedBox(height: 20),
+              InkWell(
+                child: Container(
+                  padding: EdgeInsets.all(16),
+                  height: 50,
+                  width: 300,
+                  decoration: BoxDecoration(
+                    color: Colors.lightBlue,
+                    borderRadius: BorderRadius.circular(8.0),
+                  ),
+                  child: Center(
+                    child: Text('Click here to open Image Picker'),
+                  ),
+                ),
+                onTap: () {
+                  Navigator.of(context)
+                      .pushNamed(RouteConstants.imagePickerRoute);
+                },
+              ),
+              SizedBox(height: 20),
             ],
           ),
         ),
